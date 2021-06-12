@@ -5,6 +5,4 @@ dbConn = mysql.connector.connect(
     password="Shivani123#",
     database="shop")
 dbcursor = dbConn.cursor()
-
-
-dbcursor.execute("alter table packing add column id int auto_increment primary key")
+dbcursor.execute("CREATE TABLE packing (expdate VARCHAR(50), packedby VARCHAR(50), madeby varchar(50))")
